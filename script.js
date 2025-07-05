@@ -3,7 +3,7 @@ document.getElementById("uploadForm").addEventListener("submit", async (e) => {
 
   const formData = new FormData(e.target);
 
-  const res = await fetch("http://localhost:5000/compare", {
+  const res = await fetch("/compare", {
     method: "POST",
     body: formData,
   });
